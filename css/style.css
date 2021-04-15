@@ -3,6 +3,7 @@
     --blue: #314584;
     --red:#ff3946;
     --white:#FFFEFE ;
+    --gray:#6e757a;
 }
 /* End Variables */
 /* Global Rules */
@@ -16,6 +17,7 @@ html{
 }
 body{
     font-family: 'Work Sans', sans-serif;
+    text-transform: capitalize;
 }
 .parent{
     background-color: white;
@@ -55,11 +57,17 @@ body{
     }
 }
 /* End Global Rules */
+/* Start Nav bar */
 .nav-bar
 {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+}
+@media ( max-width: 768px){
+    .nav-bar{
+        margin-top: 10px;
+    }
 }
 .navbar-band{
     padding:10px 0 ;
@@ -106,10 +114,87 @@ body{
         justify-content: center;
     }
 }
+/* End  Nav bar */
 
+/* Start Main Home */
 .container-fluid img{
     position: absolute;
     right: 0px;
-    z-index: -1;
+    z-index: -9;
     width: 50%;
 }
+@media ( max-width: 995px){
+    .container-fluid img{
+        display: none;
+    }
+    .main-home{
+        text-align: center;
+    }
+}
+/* @media (max-width: 1199px){  
+    .container-fluid img {
+        margin-top: 100px;
+        width: 45%;
+    } 
+} */
+.main-home .text h1{
+    margin: 250px 0 20px 0;
+    font-size: 4.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--blue);
+}
+@media (max-width: 1200px){  
+    .main-home .text h1 {
+        margin: 100px 0 20px 0;
+    }
+}
+.main-home .text p{
+    color: var(--gray);
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+.main-home .btns button{
+    text-transform:capitalize ;
+    font-weight: 600;
+    letter-spacing: 1;
+    padding: 17px 35px;
+    margin-right: 40px;
+    width: 200px;
+    height: 55px;
+    border: 2px solid var(--red);
+    border-radius: 25px;
+    background-color: var(--red);
+    color: var(--white);
+    box-shadow: 0px 4px 5px 0px rgb(255 57 70 / 15%);
+}
+.main-home .btns button:hover{
+    background-color: var(--white);
+    color: var(--blue);
+}
+.main-home .btns a{
+    padding: 17px 35px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--blue);
+}
+.main-home .btns a:hover{
+    color: var(--red);
+}
+@media ( max-width: 768px){
+    .main-home .text h1{
+        margin-top: 20px;
+        font-size: 3rem;
+    }
+    .main-home .text p{
+        font-size: .8rem;
+        margin-bottom: 10px;
+    }
+    .main-home .btns a,
+     .main-home .btns button {
+        margin: 10px auto;
+        display: block;
+    }
+
+}
+/* End Main Home */
