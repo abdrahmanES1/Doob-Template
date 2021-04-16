@@ -4,6 +4,7 @@
     --red:#ff3946;
     --white:#FFFEFE ;
     --gray:#6e757a;
+    --btn-padding: 17px 35px;
 }
 /* End Variables */
 /* Global Rules */
@@ -37,6 +38,24 @@ body{
     margin-right: auto;
     margin-left: auto;
 }
+a{
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+    position: relative;
+}
+.btn-special{
+    text-transform: capitalize ;
+    padding: 17px 35px;
+    margin-right: 40px;
+    width: 200px;
+    height: 55px;
+    border: 2px solid var(--red);
+    border-radius: 25px;
+    background-color: var(--red);
+    color: var(--white);
+    box-shadow: 0px 4px 5px 0px rgb(255 57 70 / 15%);
+}
 /* Small screens */ 
 @media ( min-width: 768px){
     .container{
@@ -62,7 +81,7 @@ body{
 {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 @media ( max-width: 768px){
     .nav-bar{
@@ -115,13 +134,12 @@ body{
     }
 }
 /* End  Nav bar */
-
 /* Start Main Home */
 .container-fluid img{
     position: absolute;
     right: 0px;
     z-index: -9;
-    width: 50%;
+    width: 45%;
 }
 @media ( max-width: 995px){
     .container-fluid img{
@@ -131,12 +149,6 @@ body{
         text-align: center;
     }
 }
-/* @media (max-width: 1199px){  
-    .container-fluid img {
-        margin-top: 100px;
-        width: 45%;
-    } 
-} */
 .main-home .text h1{
     margin: 250px 0 20px 0;
     font-size: 4.4rem;
@@ -144,9 +156,9 @@ body{
     letter-spacing: 1px;
     color: var(--blue);
 }
-@media (max-width: 1200px){  
+@media (max-width: 1300px){  
     .main-home .text h1 {
-        margin: 100px 0 20px 0;
+        margin: 150px 0 20px 0;
     }
 }
 .main-home .text p{
@@ -154,32 +166,19 @@ body{
     margin-bottom: 40px;
     line-height: 1.8;
 }
-.main-home .btns button{
-    text-transform:capitalize ;
-    font-weight: 600;
-    letter-spacing: 1;
-    padding: 17px 35px;
-    margin-right: 40px;
-    width: 200px;
-    height: 55px;
-    border: 2px solid var(--red);
-    border-radius: 25px;
-    background-color: var(--red);
-    color: var(--white);
-    box-shadow: 0px 4px 5px 0px rgb(255 57 70 / 15%);
-}
-.main-home .btns button:hover{
+.main-home .btns a:first-child:hover{
     background-color: var(--white);
     color: var(--blue);
 }
-.main-home .btns a{
-    padding: 17px 35px;
-    text-decoration: none;
-    font-weight: 600;
+.main-home .btns a:last-child{
+    padding: var(--btn-padding);
     color: var(--blue);
 }
 .main-home .btns a:hover{
     color: var(--red);
+}
+.main-home .btns{
+    margin-bottom: 160px;
 }
 @media ( max-width: 768px){
     .main-home .text h1{
@@ -197,3 +196,57 @@ body{
     }
 }
 /* End Main Home */
+.services{
+        padding: 50px 0px;
+}
+.services .img-aside img:first-child{
+    position: absolute;
+    max-width: 100%;
+    left: -20px;
+}
+.services .img-aside img:last-child{
+    top: 1300px;
+}
+.services .img-aside img{
+    max-width: 100%;
+    height: auto;
+    width: 278px;
+}
+.services .articles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: space-evenly;
+}
+.services .articles .col{
+    flex: 0 0 33.33%;
+    max-width: 100%;
+}
+.services .articles .col:first-child{
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.services .articles .col a:hover{
+    background-color: var(--white);
+    color: var(--blue);
+}
+.services .articles .col .srv:first-child{
+    margin-bottom: 50px;
+}
+.services .articles .col .srv{
+    background-color: #fff;
+    padding: 40px 45px;
+    margin: 10px;
+    -webkit-box-shadow: 0px 3px 7px 0px rgb(28 31 33 / 15%);
+    -moz-box-shadow: 0px 3px 7px 0px rgba(28,31,33,0.15);
+    box-shadow: 0px 3px 7px 0px rgb(28 31 33 / 15%);
+    min-height: 400px;
+}
+@media ( max-width: 995px){
+    .services .articles{
+        /* margin-right: 0px;
+        margin-left: 0px; */
+    }
+}
