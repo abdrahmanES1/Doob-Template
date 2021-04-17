@@ -141,6 +141,11 @@ a{
     z-index: -9;
     width: 45%;
 }
+/* @media (max-width: 1300px){  
+    .main-home .text h1 {
+        margin: 150px 0 20px 0;
+    }
+} */
 @media ( max-width: 995px){
     .container-fluid img{
         display: none;
@@ -155,11 +160,6 @@ a{
     font-weight: 600;
     letter-spacing: 1px;
     color: var(--blue);
-}
-@media (max-width: 1300px){  
-    .main-home .text h1 {
-        margin: 150px 0 20px 0;
-    }
 }
 .main-home .text p{
     color: var(--gray);
@@ -178,7 +178,7 @@ a{
     color: var(--red);
 }
 .main-home .btns{
-    margin-bottom: 160px;
+    margin-bottom: 200px;
 }
 @media ( max-width: 768px){
     .main-home .text h1{
@@ -192,7 +192,11 @@ a{
     .main-home .btns a,
      .main-home .btns button {
         margin: 10px auto;
+        font-size: .9rem;
         display: block;
+    }
+    .main-home .btns{
+        margin-bottom: 70px;
     }
 }
 /* End Main Home */
@@ -243,7 +247,25 @@ a{
     -moz-box-shadow: 0px 3px 7px 0px rgba(28,31,33,0.15);
     box-shadow: 0px 3px 7px 0px rgb(28 31 33 / 15%);
     min-height: 400px;
+    letter-spacing: 1.8px;
 }
+.services .articles .col1 h1{
+    margin-bottom: 50px;
+    color: var(--blue);
+    font-weight: 600;
+}
+.services .articles .col .srv h3{
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2rem;
+    color: var(--blue);
+}
+.services .articles .col .srv p{
+    font-size: .8rem;
+    line-height: 1.5rem;
+    color: var(--blue);
+}
+
 @media ( max-width: 995px){
     .services .articles{
         /* margin-right: 0px;
