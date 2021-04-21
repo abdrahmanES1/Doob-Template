@@ -200,6 +200,7 @@ a{
     }
 }
 /* End Main Home */
+/* Services section */
 .services{
         padding: 50px 0px;
 }
@@ -265,10 +266,20 @@ a{
     line-height: 1.5rem;
     color: var(--blue);
 }
-
 @media ( max-width: 995px){
-    .services .articles{
-        /* margin-right: 0px;
-        margin-left: 0px; */
+    .services .articles .col{
+    flex: 0 0 auto;
+    max-width: 100%;
+    text-align: center;
+    }
+    .services .articles  .col2{
+        margin-top: 1.5rem;
+    }
+    .btn-special{
+        margin-right: 0;
     }
 }
+/* Services section */
+/* About section  */
+
+/* End About section */
