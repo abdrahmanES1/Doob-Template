@@ -20,11 +20,6 @@ body{
     font-family: 'Work Sans', sans-serif;
     text-transform: capitalize;
 }
-.parent{
-    background-color: white;
-    margin: auto;
-    width: 600px;
-}
 .container{
     padding-left: 15px;
     padding-right: 15px;
@@ -202,7 +197,8 @@ a{
 /* End Main Home */
 /* Services section */
 .services{
-        padding: 50px 0px;
+    position: relative;
+    padding: 50px 0px;
 }
 .services .img-aside img:first-child{
     position: absolute;
@@ -273,7 +269,7 @@ a{
     text-align: center;
     }
     .services .articles  .col2{
-        margin-top: 1.5rem;
+        margin-top: 2rem;
     }
     .btn-special{
         margin-right: 0;
@@ -281,5 +277,54 @@ a{
 }
 /* Services section */
 /* About section  */
+.about .columms{
+    display: flex;
+}
+.about .columms .col{
+    margin: 1.5rem;
+}
+.about .columms .col1{flex: 0 0 45%;}
+.about .columms .col2{flex: 0 0 50%;}
+.about .columms .col1 .image img{
+    position: relative;
+    left: 0;
+    max-width: 100%;
+}
+.about .columms .col2 .text h4{
+    margin-bottom: 5px;
+    color: var(--red);
+}
+.about .columms .col2 .text :not(:first-child){
+    color: var(--blue);
+}
+.about .columms .col2 .text h2{
+    margin: 0px 0px 25px 0px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+.about .columms .col2 .text p{
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    letter-spacing: 0.025em;
+}
+@media ( max-width: 995px){
+    .about .columms{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about .columms .col2 .text h1{
+        font-size: 2rem;
+        line-height: 3.0rem;
+    }
+    .about .columms .col2 .text p{
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 15px;
+        letter-spacing: 0.025em;
+    }
 
+}
 /* End About section */
