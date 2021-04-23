@@ -520,21 +520,100 @@ a{
     background-color: var(--white);
     color: var(--blue);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*   End CONTACT US section*/
+footer{
+    background-color: var(--blue);
+    color: var(--white);
+    width: 100%;
+    min-height: 400px;
+    text-align: center;
+    padding: 70px 0px 0px 0px;
+    margin-top: 20px;
+} 
+footer .rows .row1 h5{
+    font-size: 1rem;
+    color: var(--white);
+    padding-bottom: 10px;
+}
+footer .rows .row1 h3{
+    color: var(--red);
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+footer .rows .row1 h6{
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+footer .rows .row2 ul li a{
+    font-size: 2.7rem;
+    color: var(--white);
+    margin: 0px 30px;
+}
+footer .rows{
+    display: flex;
+    flex-direction:column;
+}
+footer .navbar li{
+    list-style-type: none;
+    padding: 0 40px 2px 0 ;
+}
+footer .navbar li a{ 
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 20px 20px;
+}
+footer .navbar li:hover a{
+    color: var(--red);
+}
+footer .navbar-calopas{
+    display: flex ;
+    flex-direction: row;
+    justify-items: flex-start;
+    justify-content:space-evenly;
+    width: auto;
+}
+footer  .navbar-calopas li, 
+footer .rows .row2 .social li{
+    list-style-type: none;
+}
+footer  .navbar-calopas , 
+footer .rows .row2 .social {
+    padding: 0px;
+}
+footer  .navbar-calopas li a,
+footer .rows .row2 .social li a{ 
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 10px;
+}
+footer  .navbar-calopas li:hover a,
+footer .rows .row2 .social li:hover a{
+    color: var(--red);
+}
+@media ( max-width: 768px){
+    footer .navbar-calopas,
+    footer .rows .row2 .social {
+        flex-direction: column;
+    }
+    footer  .navbar-calopas li, 
+    footer .rows .row2 .social li{
+        padding: 5px;
+    }
+}
+footer .rows .row2 .social{
+    display: flex ;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+footer .rows .row2 .social li a i{
+    font-size: 3rem;
+    padding: 0px;
+}
