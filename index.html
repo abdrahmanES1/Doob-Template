@@ -36,7 +36,7 @@
                         <li><a href="#contact-us">Contact Us.</a></li>
                     </ul>
                 </nav>
-                <button >Contact Us</button>  
+                <button hrf="#contact-us">Contact Us</button>  
             </nav>
         </div>
         <!-- End Nav Bar  -->
@@ -50,8 +50,8 @@
                     <p>Vestibulum ac diam sit amet quam vehicula elementum amet <br> est on dui. Nulla porttitor accumsan tincidunt.</p>
                 </div>
                 <div class="btns">
-                    <a data-scroll href="contactus" class="btn-special">more about us</a>
-                    <a data-scroll href="#about">get in touch.</a>
+                    <a href="#about" class="btn-special">more about us</a>
+                    <a  href="#">get in touch.</a>
                 </div>
             </article>
         </section>
@@ -190,11 +190,11 @@
                 </div>
                 <form action="" >
                     <div class="row row2">
-                        <input type="email" placeholder="Your email">
-                        <input type="text" placeholder="subject">
+                        <input type="email" placeholder="Your email" id="email-input">
+                        <input type="text" placeholder="subject" id="subject-input">
                     </div>
                     <div class="row row3">
-                        <textarea cols="100" rows="10" id="message" >Message here...</textarea>
+                        <textarea cols="100" rows="10" id="message-input" maxlength="150">Message here...</textarea>
                         <a href="" class="btn-special" id="send">send message</a>
                     </div>
                     
@@ -233,6 +233,6 @@
             </div>
         </div>
     </footer>
- 
+    <script src="javascript/main.js"></script>
 </body>
 </html>
