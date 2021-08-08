@@ -30,3 +30,9 @@ document.body.onscroll = _ =>
 }
 
 scrollToTopBtn.onclick = _=>window.scrollTo(0,0);
+
+
+// INITIALIZE AOS
+
+ AOS.init();
+
