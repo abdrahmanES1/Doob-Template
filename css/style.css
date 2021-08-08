@@ -503,6 +503,7 @@ a {
   color: var(--blue);
   font-weight: 600;
   margin-bottom: 15px;
+  outline: none;
 }
 .contact-us .rows .row3 textarea {
   resize: vertical;
