@@ -34,5 +34,7 @@ scrollToTopBtn.onclick = _=>window.scrollTo(0,0);
 
 // INITIALIZE AOS
 
- AOS.init();
+ AOS.init({
+     duration: 700,
+ });
 
